@@ -1,0 +1,441 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Grenze+Gotisch:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="name-box">
+        <h1 class="name">Muhammad Suleiman</h1>
+      </div>
+      <div class="left-circle"></div>
+      <div class="circle"></div>
+      <div class="right-circle"></div>
+
+      <div class="main-box">
+        <h1 class="heading-basic">
+          <span class="heading-basic-main">Muhammad Suleiman</span>
+          <span class="heading-basic-sub">Future Software Developer</span>
+        </h1>
+        <a href="#portfolio-about-section" class="btn btn-home">About Me</a>
+      </div>
+    </header>
+
+    <section class="portfolio-about-section" id="portfolio-about-section">
+      <div class="portfolio-heading-box">
+        <h2 class="portfolio-heading">Built Different</h2>
+      </div>
+      <div class="portfolio-about-text">
+        <p class="portfolio-paragraph">
+          I'm Muhammad Adeyinka Suleiman, a senior at Maury High School with a
+          passion for leadership and growth. As Drill Commander in NJROTC, I led
+          and mentored my team, helping them excel in competitive events.
+        </p>
+        <p class="portfolio-paragraph">
+          Originally from Nigeria, moving to the U.S. opened up new
+          opportunities for me to develop as a leader and grow in ways I never
+          imagined. I thrive in challenges, constantly pushing myself to achieve
+          more.
+        </p>
+        <p class="portfolio-paragraph">
+          Whether it's strategy, tech, or leading by example, I'm always ready
+          to take things to the next level.
+        </p>
+        <a href="#projects" class="portfolio-learn-more">View My Work →</a>
+      </div>
+      <div class="portfolio-about-images">
+        <img
+          src="./Images/grop.jpg"
+          alt="Photo 1"
+          class="portfolio-img img-1"
+        />
+        <img
+          src="./Images/dressblwin.jpg"
+          alt="Photo 2"
+          class="portfolio-img img-2"
+        />
+        <img
+          src="./Images/normalwin.jpg"
+          alt="Photo 3"
+          class="portfolio-img img-3"
+        />
+      </div>
+    </section>
+
+
+
+    <section id="certifications" class="cert-section">
+      <h2>My Certifications</h2>
+      <div class="carousel-wrapper">
+        <button class="scroll-btn left" onclick="scrollCarousel(-1)">‹</button>
+        <div class="cert-carousel" id="certCarousel">
+          <div class="cert-card">
+            <img src="./certs/freecodecamp-responsive-webdesign.png" alt="Responsive Web Design Certification" onclick="openModal(this)">
+            <h3>Responsive Web Design</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/MOAA.jpg" alt="Military Officers Association of America Certification" onclick="openModal(this)">
+            <h3>Military Officers Association of America</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/SUVCW.jpg" alt="Sons of Union Vetereans of the Civil War Certification" onclick="openModal(this)">
+            <h3>Sons of Union Vetereans of the Civil War</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/MOWW.jpg" alt="Military Order of the World Wars Certification" onclick="openModal(this)">
+            <h3>Military Order of the World Wars</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Basic Leadership Training Honor Cadet.jpg" alt="Basic Leadership Training Honor Cadet Certification" onclick="openModal(this)">
+            <h3>Honor Cadet</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Basic Leadership Completion.jpg" alt="Basic Leadership Completion Certification" onclick="openModal(this)">
+            <h3>Basic Leadership Completion</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Uniform Personnel Inspection.jpg" alt="Uniform Personnel Inspection Certification" onclick="openModal(this)">
+            <h3>Uniform Personnel Inspection</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Honor Society.jpg" alt="Honor Society Certification" onclick="openModal(this)">
+            <h3>Honor Society</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Honor Roll.jpg" alt="Honor Roll Certification" onclick="openModal(this)">
+            <h3>Honor Roll</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Letter from Bonita G Anthony Member Virginia General Assembly.jpg" alt="Letter from Bonita G Anthony Member Virginia General Assembly" onclick="openModal(this)">
+            <h3>Letter from Bonita G Anthony Member Virginia General Assembly</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./certs/Air Rifle Competition.jpg" alt="Air Rifle Competition Certification" onclick="openModal(this)">
+            <h3>Air Rifle Competition</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./Images/dronewings.jpg" alt="Remote Pilot Part 107 Certification" onclick="openModal(this)">
+            <h3>Remote Pilot Part 107 Certification</h3>
+          </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollCarousel(1)">›</button>
+      </div>
+    
+      <!-- Modal -->
+      <div id="certModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+    </section>
+    
+    
+
+
+
+    <section class="projects-section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./Images/Portfolio Websites.png" alt="Project 1">
+          <h3>Muhammd Suleiman Portfolio Website</h3>
+          <p>Responsive personal site showcasing skills and work and a little bit of Glassmorphism, built with modern HTML/CSS/JS.</p>
+          <a href="#header" target="_top">Explore</a>
+        </div>
+        <div class="project-card">
+          <img src="./Images/Maury NJROTC.png" alt="Project 2">
+          <h3>Maury Navy Junior Reserve Officer Training Corps (NJROTC) Website</h3>
+          <p>Built a Fully Functional Website for Maury High School NJROTC unit </p>
+          <a href="https://maurynjrotc.org/" target="_blank">Explore</a>
+        </div>
+        <div class="project-card">
+          <img src="./images/torus.png" alt="Project 3">
+          <h3>3D TorusKnot</h3>
+          <p>I recently began learning Three.js and built this project to gain practical experience with 3D graphics. It helped me understand the core concepts of rendering, animation, and interactivity in a real-world context.</p>
+          <a href="./TorusKnotGeometry/index.html" target="_blank">Explore</a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+
+
+    <script>
+      const images = document.querySelectorAll('.portfolio-img');
+
+images.forEach(img => {
+
+  img.addEventListener('click', () => {
+    images.forEach(i => i.classList.remove('active')); // Remove active from all
+    img.classList.add('active'); // Add to the clicked one
+  });
+});
+
+
+
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('certCarousel');
+  const scrollAmount = 320; // adjust for card width + margin
+
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('certCarousel');
+  const scrollAmount = 320; // adjust if card width changes
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+function openModal(imgElement) {
+  const modal = document.getElementById("certModal");
+  const modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+}
+
+function closeModal() {
+  document.getElementById("certModal").style.display = "none";
+}
+
+    </script>
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Grenze+Gotisch:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="name-box">
+        <h1 class="name">Muhammad Suleiman</h1>
+      </div>
+      <div class="left-circle"></div>
+      <div class="circle"></div>
+      <div class="right-circle"></div>
+
+      <div class="main-box">
+        <h1 class="heading-basic">
+          <span class="heading-basic-main">Muhammad Suleiman</span>
+          <span class="heading-basic-sub">Future Software Developer</span>
+        </h1>
+        <a href="#portfolio-about-section" class="btn btn-home">About Me</a>
+      </div>
+    </header>
+
+    <section class="portfolio-about-section" id="portfolio-about-section">
+      <div class="portfolio-heading-box">
+        <h2 class="portfolio-heading">Built Different</h2>
+      </div>
+      <div class="portfolio-about-text">
+        <p class="portfolio-paragraph">
+          I'm Muhammad Adeyinka Suleiman, a senior at Maury High School with a
+          passion for leadership and growth. As Drill Commander in NJROTC, I led
+          and mentored my team, helping them excel in competitive events.
+        </p>
+        <p class="portfolio-paragraph">
+          Originally from Nigeria, moving to the U.S. opened up new
+          opportunities for me to develop as a leader and grow in ways I never
+          imagined. I thrive in challenges, constantly pushing myself to achieve
+          more.
+        </p>
+        <p class="portfolio-paragraph">
+          Whether it's strategy, tech, or leading by example, I'm always ready
+          to take things to the next level.
+        </p>
+        <a href="#projects" class="portfolio-learn-more">View My Work →</a>
+      </div>
+      <div class="portfolio-about-images">
+        <img
+          src="./Images/grop.jpg"
+          alt="Photo 1"
+          class="portfolio-img img-1"
+        />
+        <img
+          src="./Images/dressblwin.jpg"
+          alt="Photo 2"
+          class="portfolio-img img-2"
+        />
+        <img
+          src="./Images/normalwin.jpg"
+          alt="Photo 3"
+          class="portfolio-img img-3"
+        />
+      </div>
+    </section>
+
+
+
+    <section id="certifications" class="cert-section">
+      <h2>My Certifications</h2>
+      <div class="carousel-wrapper">
+        <button class="scroll-btn left" onclick="scrollCarousel(-1)">‹</button>
+        <div class="cert-carousel" id="certCarousel">
+          <div class="cert-card">
+            <img src="certs/freecodecamp-responsive-webdesign.png" alt="Responsive Web Design Certification" onclick="openModal(this)">
+            <h3>Responsive Web Design</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/MOAA.jpg" alt="Military Officers Association of America Certification" onclick="openModal(this)">
+            <h3>Military Officers Association of America</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/SUVCW.jpg" alt="Sons of Union Vetereans of the Civil War Certification" onclick="openModal(this)">
+            <h3>Sons of Union Vetereans of the Civil War</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/MOWW.jpg" alt="Military Order of the World Wars Certification" onclick="openModal(this)">
+            <h3>Military Order of the World Wars</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Basic Leadership Training Honor Cadet.jpg" alt="Basic Leadership Training Honor Cadet Certification" onclick="openModal(this)">
+            <h3>Honor Cadet</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Basic Leadership Completion.jpg" alt="Basic Leadership Completion Certification" onclick="openModal(this)">
+            <h3>Basic Leadership Completion</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Uniform Personnel Inspection.jpg" alt="Uniform Personnel Inspection Certification" onclick="openModal(this)">
+            <h3>Uniform Personnel Inspection</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Honor Society.jpg" alt="Honor Society Certification" onclick="openModal(this)">
+            <h3>Honor Society</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Honor Roll.jpg" alt="Honor Roll Certification" onclick="openModal(this)">
+            <h3>Honor Roll</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Letter from Bonita G Anthony Member Virginia General Assembly.jpg" alt="Letter from Bonita G Anthony Member Virginia General Assembly" onclick="openModal(this)">
+            <h3>Letter from Bonita G Anthony Member Virginia General Assembly</h3>
+          </div>
+          <div class="cert-card">
+            <img src="certs/Air Rifle Competition.jpg" alt="Air Rifle Competition Certification" onclick="openModal(this)">
+            <h3>Air Rifle Competition</h3>
+          </div>
+          <div class="cert-card">
+            <img src="./Images/dronewings.jpg" alt="Remote Pilot Part 107 Certification" onclick="openModal(this)">
+            <h3>Remote Pilot Part 107 Certification</h3>
+          </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollCarousel(1)">›</button>
+      </div>
+    
+      <!-- Modal -->
+      <div id="certModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+    </section>
+    
+    
+
+
+
+    <section class="projects-section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./Images/Portfolio Websites.png" alt="Project 1">
+          <h3>Muhammd Suleiman Portfolio Website</h3>
+          <p>Responsive personal site showcasing skills and work and a little bit of Glassmorphism, built with modern HTML/CSS/JS.</p>
+          <a href="#header" target="_top">Explore</a>
+        </div>
+        <div class="project-card">
+          <img src="./Images/Maury NJROTC.png" alt="Project 2">
+          <h3>Maury Navy Junior Reserve Officer Training Corps (NJROTC) Website</h3>
+          <p>Built a Fully Functional Website for Maury High School NJROTC unit </p>
+          <a href="https://maurynjrotc.org/" target="_blank">Explore</a>
+        </div>
+        <div class="project-card">
+          <img src="./Images/torus.png" alt="Project 3">
+          <h3>3D TorusKnot</h3>
+          <p>I recently began learning Three.js and built this project to gain practical experience with 3D graphics. It helped me understand the core concepts of rendering, animation, and interactivity in a real-world context.</p>
+          <a href="./TorusKnotGeometry/index.html" target="_blank">Explore</a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+
+
+    <script>
+      const images = document.querySelectorAll('.portfolio-img');
+
+images.forEach(img => {
+
+  img.addEventListener('click', () => {
+    images.forEach(i => i.classList.remove('active')); // Remove active from all
+    img.classList.add('active'); // Add to the clicked one
+  });
+});
+
+
+
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('certCarousel');
+  const scrollAmount = 320; // adjust for card width + margin
+
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('certCarousel');
+  const scrollAmount = 320; // adjust if card width changes
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+function openModal(imgElement) {
+  const modal = document.getElementById("certModal");
+  const modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+}
+
+function closeModal() {
+  document.getElementById("certModal").style.display = "none";
+}
+
+    </script>
+  </body>
+</html>
+>>>>>>> 45a6b15a2307fa6516f6bcabc4da7b3522b44ab3
